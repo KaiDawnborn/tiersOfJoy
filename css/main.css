@@ -1,0 +1,169 @@
+/* CSS = Cascading Stylesheets */
+
+/*
+CSS Selector {
+	property: value;
+}
+*/
+
+body {
+	background-image: url("../img/lights.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+    font-family: 'Merienda', cursive;
+    text-shadow: 2px 2px rgb(55,55,55,.25); /*grey*/
+    overflow: hidden;
+}
+
+/*navigation bar*/
+.nav {
+	background-color: rgb(196, 173, 187, 0.75); /*dusty rose*/
+    position: fixed;
+    left: 50vw;
+    top: 28vh;
+    margin: -25vh 0 2vh -44%;
+    padding: 5px;
+    width: 87vw;
+    min-width: 402px;
+    height: 50px;
+    display: block;
+}
+.nav ul {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+    display: block;
+    height: 50px;
+}
+.rightnav {
+    float: right;
+}
+/*Style nav links*/
+.nav li a, .rightnav li a {
+    display: block;
+    color: rgb(250,238,193); /*cream yellow*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Change nav link background color on hover*/
+.nav li a:hover {
+    background-color: rgb(155, 165, 191); /*cornflower blue*/
+}
+/*Change nav link color on click*/
+.nav li a:active {
+    color: rgb(70,88,119);
+}
+/*Settle content lower than navigation*/
+.spacer {
+    display: block;
+    height: 10vh;
+    margin-top: -8px;
+    padding: none;
+}
+
+/*Content basics*/
+div.content {   
+    height: 75vh;
+}
+.block {
+    margin: 4vh auto 2vh auto;
+    padding: 15px;
+    background-color: rgb(222, 216, 221, 0.85); /*dusty pink*/
+    text-align: center;
+    overflow: auto;
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    backface-visibility: hidden;
+}
+.block h1 {
+    color: rgb(250,238,193); /*yellow cream*/
+}
+/*menu header*/
+.block h2 {
+    color: black;
+    font-size: 1.25em;
+}
+.block ul {
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+}
+.block a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(33, 63, 167); /*deep blue*/
+}
+p {
+    margin: 3%;
+}
+
+/*Menu content*/
+/*scrollable table*/
+#foodtable {
+    display: flex;
+    position: relative;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
+#tdiv {
+    overflow: auto;
+    height: auto;
+}
+/*table design*/
+.block table {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    width: 60%;
+    background-color: rgb(255,255,255,0.5); /*transparent white*/
+}
+.block thead {
+    font-size: 1.5em;
+    color: magenta;
+}.block tbody {
+    font-size: 1em;
+}
+.block tfoot {
+    font-size: .6em;
+    padding-top: 1em;
+}
+.block td {
+    padding: 2px;
+}
+/*Header cells in menu*/
+.subhead {
+    background-color: rgb(250, 238, 193, 0.8);
+}
+/*Bottom line of each cell*/
+.subtext {
+    font-size: .7em;
+}
+/*Track cursor over table cells but not header or footer*/
+.block td:not(.nohover):hover {
+    color: rgb(107,95,102);
+    background-color: beige;
+}
+
+/*Menu Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track color */
+::-webkit-scrollbar-track {
+    background: beige; 
+}
+/* Handle color*/
+::-webkit-scrollbar-thumb {
+    background: pink; 
+}
+/* Handle color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(155, 165, 191); 
+}
